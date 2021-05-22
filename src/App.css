@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.join-form-contaier{
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-1{
+  flex:1
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flat-box{
+  border:3px solid lightgray;
+  box-shadow: 0px 0px 20px 5px lightgrey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.join-box{
+  height: 35vh;
+  background:rgba(255, 255, 255, 0.3)
+}
+
+.bg-img{
+  /* background-image: url('https://thumbs.gfycat.com/BewitchedAntiqueAllensbigearedbat-size_restricted.gif'); */
+  /* background-image: url('https://i.gifer.com/2Mbj.gif');
+  background-repeat: no-repeat;
+  background-size: contain; */
+
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+
+.btn-outline-custom {
+  border: 1px solid white;
+}
+
+.chats{
+  min-height: 70vh;
+  max-height: 70vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: scroll;
 }
 
-.App-link {
-  color: #61dafb;
+.chat small{
+  font-size:12px
+}
+.chat p{
+  border:1px solid #ababab;
+  display: inline-block;
+  padding:2px 10px;
+  border-radius: 10px;
+
+}
+.right{  
+  float: right;
+  clear: both;
+  align-self: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.participants {
+  max-height: 80vh;
+  min-height: 80vh;
+  overflow-y: scroll
+}
+
+.participants .avatar{
+  border:1px solid black;
+  padding:10px;
+  border-radius: 50px;
+
+}
+
+.participants .name{
+  margin-left:15px;
+  margin-top:15px;
 }
